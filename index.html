@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Los Baños</title>
+</head>
+<style>
+  body {
+    background-color: rgb(228, 250, 255);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background-color 0.4s ease;
+    height: 100vh;
+    max-width: 100vw;
+    margin: 0;
+  }
+
+  .night-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .night-mode .header1 {
+    color: white;
+  }
+
+  .night-mode .p1 {
+    color: rgb(190,190,190);
+  }
+
+  .night-mode .layout1, .night-mode .layout2 {
+    box-shadow: 0 4px 12px rgb(29, 29, 29);
+    background-color: #1d1d1d;
+    box-shadow: 0 4px 8px rgba(143, 143, 143, 0.5);
+  }
+
+  .night-mode .top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    padding: 25px;
+  }
+
+  .night-mode .topBtn {
+    display: flex;
+    flex: 1;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(231, 157, 37);
+    color: white;
+  }
+
+  .night-mode .topBtn:active {
+    background-color: rgb(196, 127, 16);
+  }
+
+  .night-mode #bottom_banner {
+    background-color: rgb(29, 29, 29);
+  }
+
+  .night-mode .p2 {
+    color: white;
+  }
+
+  .layout1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    width: 90%;
+    max-width: 700px;
+    padding: 2%;
+    background-color: #feffdf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .layout2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 700px;
+    padding: 2%;
+    background-color: #feffdf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .image_container {
+    width: 30%;
+    height: auto;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .image_me {
+    min-width: 7.25rem;
+    height: auto;
+  }
+
+  * {
+    font-family: 'Annie Use Your Telescope';
+  }
+  
+  .p1 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    color: darkgreen;
+  }
+
+  .p2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    color: black;
+  }
+
+  .header1 {
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+    line-height: 1rem;
+    color: rgb(187, 0, 255);
+  }
+
+  .topBtn {
+    display: flex;
+    flex: 1;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: lavender;
+    color: black;
+    width: auto;
+    white-space: nowrap;
+    margin-right: 10px;
+    transition: background-color 0.1s;
+  }
+
+  .topBtn:active {
+    background-color: rgb(191, 191, 223);
+  }
+
+  .top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    padding: 25px;
+  }
+
+  .top1a {
+    display: flex;
+  }
+
+  .bottom {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #bottom_banner {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: lightblue;
+    justify-content: center;
+    color: black;
+  }
+
+  .bottom_image {
+    position: bottom;
+    margin-top: 2%;
+    justify-self: center;
+    bottom: 2%;
+    width: 9rem;
+    height: auto;
+    display: block;
+    transition: opacity 0.4s ease;
+  }
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+</style>
+<body>
+  <div class="top">
+    <div class="top1a">
+      <button class="topBtn" id="themeBtn" onclick="toggleTheme()">Dark Mode</button>
+      <button class="topBtn" onclick="scrollToLayout1()">Home</button>
+      <button class="topBtn" onclick="scrollToLayout2()">About Me</button>
+    </div>
+  </div>
+      <div class="layout1">
+        <div class="info_me1">
+          <h1 class="header1" id="name">Christian Los Baños</h1>
+          <div class="layout1a">
+            <p class="p1">
+              BSIT Student in St. Dominic College of Asia
+            </p>
+          </div>
+          <div class="layout1b">
+            <button class="topBtn" onclick="toggleTheme()">Night Mode</button>
+          </div>
+        </div>
+        <div class="image_container">
+          <img class="image_me" src="images/me.png" width="150px" height="150px">
+        </div>
+      </div>
+
+      <div class="layout2">
+        <h1 class="header1" id="about">
+          About me
+        </h1>
+        <p class="p1">
+          Hello, I am a 27-year-old student at St. Dominic College of Asia, currently pursuing a degree in BSIT because of my passion 
+          for computers and technology. I have always been interested in how computers work, which is why I chose this field of 
+          study. Throughout my academic journey, I have been learning various programming languages, including C, Java, Android 
+          Studio, HTML, CSS, and JavaScript. I have also earned certifications in Microsoft Word Specialist, Microsoft PowerPoint
+           Specialist, and an IT Specialist Certificate in Java. When I am not focused on schoolwork, I spend my free time lifting
+            weights, playing mobile games, and coding.
+        <br><br>
+          In the future, I aspire to work as a computer programmer or a software/web designer. I want to develop applications,
+           websites, or software that can make tasks more efficient and user-friendly. To achieve this goal, I am continuously
+            improving my programming skills and exploring new technologies. I believe that with hard work and dedication,
+             I can build a successful career in the IT industry.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <div class="bottom_section">
+          <img class="bottom_image" src="images/dog.png">
+        </div>
+        <div class="bottom_section" id="bottom_banner">
+          <p class="p2">
+            Coded with love by Christian
+          </p>
+        </div>
+      </div>
+    <script>
+      let isDarkMode = false;
+
+      window.onload = function () {
+        updateTheme();
+        setLayout1MarginTop();
+      };
+
+      window.onresize = function () {
+        setLayout1MarginTop();
+      };
+
+      function setLayout1MarginTop() {
+        const topHeight = document.querySelector('.top').offsetHeight;
+        const layout1 = document.querySelector('.layout1');
+        layout1.style.marginTop = `${topHeight + 20}px`;
+      }
+
+      function scrollToLayout1() {
+        const headerElement = document.querySelector('.layout1');
+        const topBanner = document.querySelector('.top');
+        const topBannerHeight = topBanner.offsetHeight;
+        const offset = topBannerHeight + 20;
+
+        const topPosition = headerElement.getBoundingClientRect().top + window.pageYOffset;
+        const finalOffset = topPosition - offset;
+
+        window.scrollTo({ top: finalOffset, behavior: 'smooth' });
+      }
+
+      function scrollToLayout2() {
+        const headerElement = document.querySelector('.layout2');
+        const topBanner = document.querySelector('.top');
+        const topBannerHeight = topBanner.offsetHeight;
+        const offset = topBannerHeight + 10;
+
+        const topPosition = headerElement.getBoundingClientRect().top + window.pageYOffset;
+        const finalOffset = topPosition - offset;
+
+        window.scrollTo({ top: finalOffset, behavior: 'smooth' });
+      }
+
+      function updateTheme() {
+        let themeBtn = document.querySelector(".topBtn");
+        let bottomImage = document.querySelector(".bottom_image");
+        bottomImage.src = isDarkMode ? "images/owl.png" : "images/dog.png";
+        themeBtn.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+
+        document.body.classList.toggle("night-mode", isDarkMode);
+      }
+
+      function toggleTheme() {
+        isDarkMode = !isDarkMode;
+        updateTheme();
+      }
+    </script>
+</body>
+</html>
