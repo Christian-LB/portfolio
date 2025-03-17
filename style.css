@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(228, 250, 255) !important;
+}
+
+* {
+    font-family: Annie Use Your Telescope, cursive !important;
+}
+
+.p1 {
+    font-size: 20px !important;
+}
+
+.hd1 {
+    font-size: 35px !important;
+}
