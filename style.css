@@ -2,14 +2,79 @@ body {
     background-color: rgb(228, 250, 255) !important;
 }
 
+.night-mode {
+    background-color: black  !important;
+  }
+
+  .night-mode .hd1 {
+    color: white  !important;
+  }
+
+  .night-mode .p1 {
+    color: rgb(190,190,190)  !important;
+  }
+
+  .night-mode .p2 {
+    color: white  !important;
+  }
+
+  .night-mode #home, .night-mode #info, .night-mode #tech {
+    box-shadow: 0 4px 12px rgb(29, 29, 29)  !important;
+    background-color: #1d1d1d  !important;
+    box-shadow: 0 4px 8px rgba(143, 143, 143, 0.5)  !important;
+  }
+
+  .night-mode #topBanner, .night-mode #bottomBanner {
+    background-color: rgb(29, 29, 29)  !important;
+  }
+
+  .night-mode .icons {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
+  }
+
 * {
     font-family: Annie Use Your Telescope, cursive !important;
 }
 
+button.btn {
+    border-radius: 10px !important;
+    padding: 2px 5px !important;
+    background-color: lightseagreen !important;
+    color: whitesmoke !important;
+    font-family: "Permanent Marker", sans-serif !important;
+    font-style: normal !important;
+    text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
+    font-size: 13px !important;
+}
+
 .p1 {
     font-size: 20px !important;
+    text-shadow: 1px 1px 1px rgba(0, 157, 255, 0.1) !important;
 }
 
 .hd1 {
     font-size: 35px !important;
+    color: blueviolet !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
+}
+
+.tooltip-inner {
+    background-color: #ce9eff !important;
+    color: black !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+}
+
+.btn {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+}
+
+#cert {
+    color: darkorange !important;
+    font-weight: bold !important;
+    text-decoration: wavy !important;
+    text-shadow: 2px 4px 6px rgba(255, 225, 28, 0.1) !important;
 }
