@@ -34,7 +34,8 @@ body {
   }
 
   .night-mode #topBanner, .night-mode #bottomBanner {
-    background-color: rgb(29, 29, 29)  !important;
+    background-color: rgb(29, 29, 29, 0.8)  !important;
+    backdrop-filter: blur(10px)  !important;
   }
 
   .night-mode .icons {
