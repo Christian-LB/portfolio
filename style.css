@@ -49,6 +49,12 @@ body {
     color: rgb(183, 255, 183) !important;
   }
 
+  .night-mode button.btn {
+    background-color: orangered !important;
+    color: whitesmoke !important;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5) !important;
+  }
+
 * {
     font-family: Annie Use Your Telescope, cursive !important;
 }
