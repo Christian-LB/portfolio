@@ -27,53 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-  function scrollToHome() {
-    const headerElement = document.querySelector('#home');
-    const topBanner = document.querySelector('#topBanner');
-    const topBannerHeight = topBanner.offsetHeight;
-    const offset = topBannerHeight + 30;
-
-    const topPosition = headerElement.getBoundingClientRect().top + window.pageYOffset;
-    const finalOffset = topPosition - offset;
-
-    window.scrollTo({ top: finalOffset, behavior: 'smooth' });
-  }
-
-  function scrollToInfo() {
-    const headerElement = document.querySelector('#info');
-    const topBanner = document.querySelector('#topBanner');
-    const topBannerHeight = topBanner.offsetHeight;
-    const offset = topBannerHeight + 20;
-
-    const topPosition = headerElement.getBoundingClientRect().top + window.pageYOffset;
-    const finalOffset = topPosition - offset;
-
-    window.scrollTo({ top: finalOffset, behavior: 'smooth' });
-  }
-
-  function scrollToTech() {
-    const headerElement = document.querySelector('#tech');
-    const topBanner = document.querySelector('#topBanner');
-    const topBannerHeight = topBanner.offsetHeight;
-    const offset = topBannerHeight + 20;
-
-    const topPosition = headerElement.getBoundingClientRect().top + window.pageYOffset;
-    const finalOffset = topPosition - offset;
-
-    window.scrollTo({ top: finalOffset, behavior: 'smooth' });
-  }
-
-  function scrollToCertifications() {
-    const headerElement = document.querySelector('#certifications');
-    const topBanner = document.querySelector('#topBanner');
-    const topBannerHeight = topBanner.offsetHeight;
-    const offset = topBannerHeight + 20;
-
-    const topPosition = headerElement.getBoundingClientRect().top + window.pageYOffset;
-    const finalOffset = topPosition - offset;
-
-    window.scrollTo({ top: finalOffset, behavior: 'smooth' });
-  }
+    function moveToHome() {
+      window.location.href = 'index.html';
+    }
+    
+    function moveToInfo() {
+      window.location.href = 'aboutme.html';
+    }
+    
+    function moveToTech() {
+      window.location.href = 'tech.html';
+    }
+    
+    function moveToCertifications() {
+      window.location.href = 'cert.html';
+    }
 
   function updateTheme() {
     let themeBtn = document.querySelector("#themeBtn");
@@ -88,4 +56,18 @@ document.addEventListener("DOMContentLoaded", function () {
   function toggleTheme() {
     isDarkMode = !isDarkMode;
     updateTheme();
+  }
+
+  if (window.location.pathname === '/cert.html' || window.location.href.includes('cert.html')) {
+  
+    const style = document.createElement('style');
+    document.body.classList.add('no-fixed');
+  }
+
+  if (window.matchMedia("(max-width: 450px)").matches && (window.location.pathname === '/aboutme.html' || window.location.href.includes('aboutme.html'))) {
+    document.body.classList.add('no-fixed');
+  }
+
+  else if (window.matchMedia("(max-width: 450px)").matches && (window.location.pathname === '/tech.html' || window.location.href.includes('tech.html'))) {
+    document.body.classList.add('no-fixed');
   }

@@ -1,17 +1,168 @@
 body {
     background-color: rgb(228, 250, 255) !important;
+    height: 100% !important;
+    margin: 0 !important;
 }
 
+#topBanner {
+  backdrop-filter: blur(10px) !important; 
+  padding: 5px !important; 
+  position: fixed !important; 
+  width: 100% !important; 
+  background-color: rgb(173, 216, 230, 0.7); top: 0; left: 0 !important; 
+  height: 45px !important; 
+  z-index: 1000 !important;
+}
+
+.certImg {
+  max-width: 80% !important; 
+  height: auto !important;
+}
+
+.Btns {
+  cursor: pointer !important;
+}
+
+#icLocBG {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important; 
+  width: 21px !important; 
+  height: 21px !important; 
+  border-radius: 50% !important;
+}
+
+.icSoc {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; 
+  width: 30px !important; 
+  height: 30px !important; 
+  border-radius: 50% !important;  
+}
+
+.locBG {
+  background-color: lightblue !important;
+}
+
+.locBody {
+  background-color: rgb(228, 250, 255) !important;
+}
+
+#imgMe {
+  max-width: 80% !important; 
+  height: auto !important;
+}
+
+.btmImgBG {
+  margin-bottom: 8px !important; 
+  justify-self: center !important;
+}
+
+.themeBG {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; 
+  width: 30px !important; 
+  height: 30px !important; 
+  border-radius: 50% !important;
+}
+
+.certcover {
+  text-decoration: underline !important; 
+  font-weight: bold !important;
+}
+
+.techBG {
+  box-shadow: 0 7px 18px rgba(0,0,0,0.2) !important; 
+  width: 150px !important; 
+  height: 150px !important;
+}
+
+#icJava, #icJavaScript {
+  width: 100px !important; 
+  height: 100px !important;
+}
+
+#home {
+  border-radius: 15px !important; 
+  justify-self: center !important; 
+  padding: 2% !important; 
+  margin-top: 70px !important; 
+  width: 90% !important; 
+  background-color: lightyellow !important; 
+  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+#info {
+  border-radius: 15px !important; 
+  justify-self: center !important; 
+  padding: 2% !important; 
+  margin-top: 70px !important; 
+  width: 90% !important; 
+  background-color: lightyellow !important; 
+  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+#certifications {
+  border-radius: 15px !important; 
+  justify-self: center !important; 
+  padding: 2% !important; 
+  margin-top: 70px !important; 
+  width: 90% !important; 
+  background-color: lightyellow !important; 
+  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+#tech {
+  border-radius: 15px !important; 
+  justify-self: center !important; 
+  padding: 2% !important; 
+  margin-top: 70px !important; 
+  width: 90% !important; 
+  background-color: lightyellow !important; 
+  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+@media screen and (min-width: 400px) and (min-height: 800px) {
+  #btmImg {
+    position: fixed !important;
+    bottom: 38px !important;
+  }
+
+  body.no-fixed #btmImg {
+    position: static !important;
+  }
+
+  body.no-fixed #bottomBanner {
+    position: static !important;
+  }
+
+  #bottomBanner {
+    position: fixed !important;
+    bottom: 0 !important;
+    justify-content: center !important; 
+    align-items: center !important; 
+    width: 100% !important; 
+    background-color: lightblue !important; 
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .col-7, 
+  .col-md-7 {
+    width: 100% !important;
+  }
+
+  .col-5, .col-md-5 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+}
 .night-mode {
     background-color: black  !important;
   }
 
-  .night-mode .tooltip-inner {
-    background-color: #5b6200 !important;
-    color: white !important;
-  }
-
-  .night-mode .hd1 {
+  .night-mode .hd1, .night-mode .menu {
     color: white  !important;
   }
 
@@ -50,25 +201,8 @@ body {
     color: rgb(183, 255, 183) !important;
   }
 
-  .night-mode button.btn {
-    background-color: orangered !important;
-    color: whitesmoke !important;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5) !important;
-  }
-
 * {
     font-family: Annie Use Your Telescope, cursive !important;
-}
-
-button.btn {
-    border-radius: 10px !important;
-    padding: 2px 5px !important;
-    background-color: lightseagreen !important;
-    color: whitesmoke !important;
-    font-family: "Permanent Marker", sans-serif !important;
-    font-style: normal !important;
-    text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
-    font-size: 13px !important;
 }
 
 .p1 {
@@ -81,19 +215,6 @@ button.btn {
     color: blueviolet !important;
     font-weight: bold !important;
     text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
-}
-
-.tooltip-inner {
-    background-color: #ce9eff !important;
-    color: black !important;
-    font-weight: bold !important;
-    letter-spacing: 2px !important;
-}
-
-.btn {
-    font-size: 15px !important;
-    font-weight: bold !important;
-    letter-spacing: 1px !important;
 }
 
 #cert {
@@ -142,4 +263,10 @@ button.btn {
 
 .dropdown a:hover {
   background-color: #ddd !important;
+}
+
+#schLocation {
+  display: flex !important;
+  justify-self: center !important;
+  border: 0 !important;
 }
