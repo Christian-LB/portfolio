@@ -64,10 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add('no-fixed');
   }
 
-  if ((window.matchMedia("(min-width: 401px)").matches && window.matchMedia("(max-height: 900px)").matches) && (window.location.pathname === '/aboutme.html' || window.location.href.includes('aboutme.html'))) {
+  if ((window.matchMedia("(max-width: 450px)").matches && window.matchMedia("(max-height: 900px)").matches) && (window.location.pathname === '/aboutme.html' || window.location.href.includes('aboutme.html'))) {
     document.body.classList.add('no-fixed');
   }
 
-  if ((window.matchMedia("(min-width: 401px)").matches && window.matchMedia("(max-height: 900px)").matches) && (window.location.pathname === '/tech.html' || window.location.href.includes('tech.html'))) {
+  if ((window.matchMedia("(max-width: 450px)").matches && window.matchMedia("(max-height: 900px)").matches) && (window.location.pathname === '/tech.html' || window.location.href.includes('tech.html'))) {
     document.body.classList.add('no-fixed');
   }
