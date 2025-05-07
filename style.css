@@ -134,17 +134,17 @@ body {
 
   #bottomBanner {
     position: fixed !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
   }
 }
 
 #bottomBanner {
   justify-content: center !important; 
-    align-items: center !important; 
-    width: 100% !important; 
-    background-color: lightblue !important;
+  align-items: center !important; 
+  width: 100% !important; 
+  background-color: lightblue !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
 }
 
 @media screen and (max-width: 500px) {
