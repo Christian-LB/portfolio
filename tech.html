@@ -14,16 +14,16 @@
 </head>
 <body>
     <div id="topBanner" class="d-flex align-items-center">
-        <span class="menu-icon me-2" onclick="toggleDropdown()">☰</span>
-    
-        <div class="dropdown" id="dropdownMenu">
-          <a class="Btns" onclick="moveToHome()">Home</a>
-            <a class="Btns" onclick="moveToInfo()">About Me</a>
-            <a class="Btns" onclick="moveToTech()">Tech Stack</a>
-            <a class="Btns" onclick="moveToCertifications()">Certifications</a>
-          </div>
-          
-          <h3 class="menu ms-1 me-auto">Menu</h3>
+      <span class="menu-icon me-2" onclick="toggleDropdown()">☰</span>
+  
+      <div class="dropdown" id="dropdownMenu">
+        <a class="Btns" onclick="moveToHome()">Home</a>
+        <a class="Btns" onclick="moveToInfo()">About Me</a>
+        <a class="Btns" onclick="moveToTech()">Tech Stack</a>
+        <a class="Btns" onclick="moveToCertifications()">Certifications</a>
+      </div>
+        
+      <h3 class="menu ms-1 me-auto">Menu</h3>
       <div class="themeBG icons card rounded-circle d-flex align-items-center justify-content-center me-1">
           <a class="Btns" onclick="toggleTheme()">
             <img class="themeImg rounded-circle" src="images/ic_moon.gif" width="30px" height="30px">
@@ -31,48 +31,46 @@
         </div>
       </div>
 
-  <div id="tech" class="d-block">
-  
-  <h2 class="hd1">Tech Stack</h2>
+    <div id="tech" class="d-block">
+      <h2 class="hd1">Tech Stack</h2>
+      <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
 
-  <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+        <div class="techBG icons card d-flex align-items-center justify-content-center">
+          <img src="images/ic_c.png" alt="C Programming Language">
+            <h5 class="text-center m-0">C Programming<br>Language</h5>
+        </div>
 
-    <div class="techBG icons card d-flex align-items-center justify-content-center">
-      <img src="images/ic_c.png" alt="C Programming Language">
-        <h5 class="text-center m-0">C Programming<br>Language</h5>
+        <div class="techBG icons card d-flex align-items-center justify-content-center">
+          <img id="icJava" src="images/ic_java.gif" alt="Java">
+          <h5 class="text-center mt-3">Java</h5>
+        </div>
+
+        <div class="techBG icons card d-flex align-items-center justify-content-center">
+          <img src="images/ic_astudio.png" alt="Android Studio">
+          <h5 class="text-center mt-3">Android Studio</h5>
+        </div>
+
+        <div class="techBG icons card d-flex align-items-center justify-content-center">
+          <img src="images/ic_vscode.png" alt="Visual Studio Code"> 
+          <h5 class="text-center mt-3">Visual Studio Code</h5>
+        </div>
+
+        <div class="techBG icons card d-flex align-items-center justify-content-center">
+          <img src="images/ic_html.png" alt="HTML"> 
+          <h5 class="text-center mt-3">HTML</h5>
+        </div>
+
+        <div class="techBG icons card d-flex align-items-center justify-content-center">
+          <img src="images/ic_css.png" alt="CSS">
+          <h5 class="text-center mt-3">CSS</h5>
+        </div>
+
+        <div class="techBG icons card d-flex align-items-center justify-content-center">
+          <img id="icJavaScript" src="images/ic_javascript.gif" alt="JavaScript">
+          <h5 class="text-center mt-3">JavaScript</h5>
+        </div>
+      </div>
     </div>
-
-    <div class="techBG icons card d-flex align-items-center justify-content-center">
-      <img id="icJava" src="images/ic_java.gif" alt="Java">
-      <h5 class="text-center mt-3">Java</h5>
-    </div>
-
-    <div class="techBG icons card d-flex align-items-center justify-content-center">
-      <img src="images/ic_astudio.png" alt="Android Studio">
-      <h5 class="text-center mt-3">Android Studio</h5>
-    </div>
-
-    <div class="techBG icons card d-flex align-items-center justify-content-center">
-      <img src="images/ic_vscode.png" alt="Visual Studio Code"> 
-      <h5 class="text-center mt-3">Visual Studio Code</h5>
-    </div>
-
-    <div class="techBG icons card d-flex align-items-center justify-content-center">
-      <img src="images/ic_html.png" alt="HTML"> 
-      <h5 class="text-center mt-3">HTML</h5>
-    </div>
-
-    <div class="techBG icons card d-flex align-items-center justify-content-center">
-      <img src="images/ic_css.png" alt="CSS">
-      <h5 class="text-center mt-3">CSS</h5>
-    </div>
-
-    <div class="techBG icons card d-flex align-items-center justify-content-center">
-      <img id="icJavaScript" src="images/ic_javascript.gif" alt="JavaScript">
-      <h5 class="text-center mt-3">JavaScript</h5>
-    </div>
-  </div>
-</div>
 
   <div class="btmImgBG col-md-5 d-flex justify-content-center mt-5">
     <img id="btmImg" src="images/dog.png" width="145px" height="130px">
