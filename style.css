@@ -177,17 +177,21 @@ body {
     color: white  !important;
   }
 
-  .night-mode .passed {
+  .night-mode .passed{
     color: white !important;
   }
 
-  .night-mode #home, .night-mode #info, .night-mode #tech, .night-mode #certifications {
+  .night-mode .btn-close {
+    filter: invert(1)  !important;
+  }
+
+  .night-mode #home, .night-mode #info, .night-mode #tech, .night-mode #certifications, .night-mode .locBG {
     box-shadow: 0 4px 12px rgb(29, 29, 29)  !important;
     background-color: #1d1d1d  !important;
     box-shadow: 0 4px 8px rgba(143, 143, 143, 0.5)  !important;
   }
 
-  .night-mode #topBanner, .night-mode #bottomBanner {
+  .night-mode #topBanner, .night-mode #bottomBanner, .night-mode .locBody {
     background-color: rgb(29, 29, 29, 0.8)  !important;
     backdrop-filter: blur(10px)  !important;
     justify-content: center  !important;
