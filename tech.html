@@ -14,6 +14,7 @@
   <title>Christian Los Baños</title>
 </head>
 <body>
+  <div id="vanta-bg"></div>
   <div id="topBanner" class="d-flex align-items-center">
     <span class="menu-icon me-2" onclick="toggleDropdown()">☰</span>
   
@@ -32,49 +33,45 @@
     </div>
   </div>
 
-  <div id="tech" class="d-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-    <h2 class="hd1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">Tech Stack</h2>
+  <div id="tech" class="fadeUpMain d-block">
+    <h2 class="fadeLeftMain hd1">Tech Stack</h2>
     <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
 
-      <div class="techBG icons card d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+      <div class="zoomInTech1 techBG icons card d-flex align-items-center justify-content-center">
         <img src="images/ic_c.png" alt="C Programming Language">
         <h5 class="text-center m-0">C Programming<br>Language</h5>
       </div>
 
-      <div class="techBG icons card d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="950">
+      <div class="zoomInTech2 techBG icons card d-flex align-items-center justify-content-center">
         <img id="icJava" src="images/ic_java.gif" alt="Java">
         <h5 class="text-center mt-3">Java</h5>
       </div>
 
-      <div class="techBG icons card d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100">
+      <div class="zoomInTech3 techBG icons card d-flex align-items-center justify-content-center">
         <img src="images/ic_astudio.png" alt="Android Studio">
         <h5 class="text-center mt-3">Android Studio</h5>
       </div>
 
-      <div class="techBG icons card d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1250">
+      <div class="zoomInTech4 techBG icons card d-flex align-items-center justify-content-center">
         <img src="images/ic_vscode.png" alt="Visual Studio Code"> 
         <h5 class="text-center mt-3">Visual Studio Code</h5>
       </div>
 
-      <div class="techBG icons card d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1400">
+      <div class="zoomInTech5 techBG icons card d-flex align-items-center justify-content-center">
         <img src="images/ic_html.png" alt="HTML"> 
         <h5 class="text-center mt-3">HTML</h5>
       </div>
 
-      <div class="techBG icons card d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1550">
+      <div class="zoomInTech6 techBG icons card d-flex align-items-center justify-content-center">
         <img src="images/ic_css.png" alt="CSS">
         <h5 class="text-center mt-3">CSS</h5>
       </div>
 
-      <div class="techBG icons card d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1700">
+      <div class="zoomInTech7 techBG icons card d-flex align-items-center justify-content-center">
         <img id="icJavaScript" src="images/ic_javascript.gif" alt="JavaScript">
         <h5 class="text-center mt-3">JavaScript</h5>
       </div>
     </div>
-  </div>
-
-  <div class="btmImgBG col-md-5 d-flex justify-content-center mt-5">
-    <img id="btmImg" src="images/dog.png" width="145px" height="130px">
   </div>
  
   <div id="bottomBanner" class="d-flex">
@@ -82,8 +79,8 @@
     <img src="images/ic_heart.gif" width="20px" height="20px" class="ms-2">
   </div>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init({once: true,});</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js" defer></script>
 </body>

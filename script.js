@@ -1,11 +1,5 @@
 let isDarkMode = false;
-
-document.addEventListener("DOMContentLoaded", function () {
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-    new bootstrap.Tooltip(tooltipTriggerEl);
-  });
-});
+let vantaEffect = null;
 
 function toggleDropdown() {
   var dropdown = document.getElementById("dropdownMenu");
@@ -24,6 +18,26 @@ document.addEventListener("click", function (event) {
     dropdown.style.display = "none";
   }
 });
+
+function initVanta() {
+  if (vantaEffect) vantaEffect.destroy();
+
+  vantaEffect = VANTA.WAVES({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: isDarkMode ? 0x3d3d3d : 0x6785ac,
+    shininess: 79.00,
+    waveHeight: 14.50,
+    waveSpeed: 1.15,
+    zoom: 0.65
+  });
+}
 
 function moveToHome() {
   window.location.href = 'index.html';
@@ -44,7 +58,6 @@ function moveToCertifications() {
 function updateTheme() {
   let bottomImage = document.querySelector("#btmImg");
   let themeImage = document.querySelector(".themeImg");
-  bottomImage.src = isDarkMode ? "images/owl.png" : "images/dog.png";
   themeImage.src = isDarkMode ? "images/ic_sun.gif" : "images/ic_moon.gif";
 
   document.body.classList.toggle("night-mode", isDarkMode);
@@ -55,14 +68,16 @@ function toggleTheme() {
   updateTheme();
 
   localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+  initVanta();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     isDarkMode = true;
-    updateTheme();
   }
+  updateTheme();
+  initVanta();
 });
 
 if (window.location.pathname === '/cert.html' || window.location.href.includes('cert.html')) {
@@ -70,16 +85,7 @@ if (window.location.pathname === '/cert.html' || window.location.href.includes('
   document.body.classList.add('no-fixed');
 }
 
-if (
-  ((window.matchMedia("(max-width: 600px)").matches || window.matchMedia("(max-height: 700px)").matches)) &&
-  (window.location.pathname === '/aboutme.html' || window.location.href.includes('aboutme.html'))
-) {
-  document.body.classList.add('no-fixed');
-}
-
-if (
-  ((window.matchMedia("(max-width: 600px)").matches || window.matchMedia("(max-height: 700px)").matches)) &&
-  (window.location.pathname === '/tech.html' || window.location.href.includes('tech.html'))
-) {
-  document.body.classList.add('no-fixed');
+if (window.location.pathname === '/index.html' || window.location.href.includes('index.html')) {
+  const style = document.createElement('style');
+  document.body.classList.add('fixed');
 }
