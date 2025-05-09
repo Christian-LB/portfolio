@@ -9,7 +9,7 @@ body {
   padding: 5px !important; 
   position: fixed !important; 
   width: 100% !important; 
-  background-color: rgb(173, 216, 230, 0.7); top: 0; left: 0 !important; 
+  background-color: rgba(127, 162, 192, 0.7); top: 0; left: 0 !important; 
   height: 45px !important; 
   z-index: 1000 !important;
 }
@@ -144,7 +144,7 @@ body {
   justify-content: center !important; 
   align-items: center !important; 
   width: 100% !important; 
-  background-color: rgb(173, 216, 230, 0.7);
+  background-color: rgba(71, 122, 233, 0.7);
   backdrop-filter: blur(5px) !important;
   margin-top: 70px !important;
   bottom: 0 !important;
@@ -196,10 +196,20 @@ body {
     box-shadow: 0 4px 8px rgba(143, 143, 143, 0.5)  !important;
   }
 
-  .night-mode #topBanner, .night-mode #bottomBanner, .night-mode .locBody {
+  .night-mode #bottomBanner, .night-mode .locBody {
     background-color: rgb(29, 29, 29, 0.8)  !important;
     backdrop-filter: blur(10px)  !important;
     justify-content: center  !important;
+  }
+
+  .night-mode #topBanner {
+    backdrop-filter: blur(5px) !important; 
+    padding: 5px !important; 
+    position: fixed !important; 
+    width: 100% !important; 
+    background-color: rgba(53, 53, 53, 0.7); top: 0; left: 0 !important; 
+    height: 45px !important; 
+    z-index: 1000 !important;
   }
 
   .night-mode .icons {
