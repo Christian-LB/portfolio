@@ -79,13 +79,3 @@ document.addEventListener('DOMContentLoaded', () => {
   updateTheme();
   initVanta();
 });
-
-if (window.location.pathname === '/cert.html' || window.location.href.includes('cert.html')) {
-  const style = document.createElement('style');
-  document.body.classList.add('no-fixed');
-}
-
-if (window.location.pathname === '/index.html' || window.location.href.includes('index.html')) {
-  const style = document.createElement('style');
-  document.body.classList.add('fixed');
-}
