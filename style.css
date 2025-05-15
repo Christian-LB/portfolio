@@ -68,9 +68,14 @@ body {
   height: 150px !important;
 }
 
-#icJava, #icJavaScript {
+#icJava, #icJavaScript, #icAS {
   width: 100px !important; 
   height: 100px !important;
+}
+
+#icGit, #icGitHub {
+  width: 80px !important; 
+  height: 80px !important;
 }
 
 #home {
@@ -126,21 +131,8 @@ body {
   z-index: -1;
 }
 
-@media screen and (min-width: 840px), (min-height: 690px) {
-  #bottomBanner {
-    position: fixed !important;
-  }
-}
-
-.no-fixed #bottomBanner {
-  position: static !important;
-}
-
-.fixed #bottomBanner {
-  position: fixed !important;
-}
-
 #bottomBanner {
+  position: fixed !important;
   justify-content: center !important; 
   align-items: center !important; 
   width: 100% !important; 
@@ -150,6 +142,10 @@ body {
   bottom: 0 !important;
   left: 0 !important;
   right: 0 !important;
+}
+
+.btmSpace {
+  margin-bottom: 50px !important;
 }
 
 @media screen and (max-width: 500px) {
@@ -437,6 +433,18 @@ body {
   opacity: 0;
   animation: zoomInTech 0.55s ease-out forwards;
   animation-delay: 1.4s;
+}
+
+.zoomInTech8 {
+  opacity: 0;
+  animation: zoomInTech 0.55s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.zoomInTech9 {
+  opacity: 0;
+  animation: zoomInTech 0.55s ease-out forwards;
+  animation-delay: 1.6s;
 }
 
 .zoomInCert {
