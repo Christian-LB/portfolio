@@ -208,7 +208,7 @@ body {
     z-index: 1000 !important;
   }
 
-  .night-mode .icons {
+  .night-mode .icons, .night-mode .themeBG {
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
   }
 
@@ -463,7 +463,7 @@ body {
   .imgMe-col {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 57%;
     transform: translateY(-50%);
     width: 150px;
     justify-content: flex-end !important;
