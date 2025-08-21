@@ -220,6 +220,20 @@ body {
     color: rgb(183, 255, 183) !important;
   }
 
+  .night-mode .dropdown a {
+    color: #ffffff !important;
+  }
+
+  .night-mode .dropdown a:hover {
+    background-color: #787878 !important;
+    box-shadow: 0 5px 3px rgba(130, 130, 130, 0.5) !important;
+  }
+
+  .night-mode .dropdown {
+    box-shadow: 0 1px 3px rgba(250, 250, 250, 5) !important;
+    background-color: #3f3f3f !important; 
+  }
+
 * {
     font-family: Annie Use Your Telescope, cursive !important;
 }
@@ -267,10 +281,11 @@ body {
   left: 10px !important;
   background-color: white !important;
   color: black !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-  border-radius: 5px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 5) !important;
+  border-radius: 15px !important;
   width: 150px !important;
   display: none;
+  opacity: 0.95 !important;
 }
 
 .dropdown a {
@@ -281,7 +296,9 @@ body {
 }
 
 .dropdown a:hover {
-  background-color: #ddd !important;
+  background-color: rgba(195, 224, 250, 0.585) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.5) !important;
 }
 
 #schLocation {
@@ -470,7 +487,7 @@ body {
     z-index: 2;
     background: transparent;
   }
-  .homeContainer .col-sm-7 {
-    padding-right: 170px;
+  .homeContainer {
+    padding-right: 130px;
   }
 }
