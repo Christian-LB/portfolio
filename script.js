@@ -55,6 +55,10 @@ function moveToCertifications() {
   window.location.href = 'cert.html';
 }
 
+function moveToProjects() {
+  window.location.href = 'project.html';
+}
+
 function updateTheme() {
   let bottomImage = document.querySelector("#btmImg");
   let themeImage = document.querySelector(".themeImg");
