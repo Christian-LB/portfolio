@@ -86,56 +86,56 @@ body {
 #home {
   border-radius: 15px !important; 
   justify-self: center !important; 
-  padding: 2% !important; 
+  padding: 4% !important; 
   margin-top: 70px !important; 
   width: 90% !important; 
   backdrop-filter: blur(7px) !important;
   background-color: rgba(255, 255, 224, 0.8) !important; 
-  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  max-width: 90%; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
 }
 
 #info {
   border-radius: 15px !important; 
   justify-self: center !important; 
-  padding: 2% !important; 
+  padding: 4% !important; 
   margin-top: 70px !important; 
   width: 90% !important; 
   backdrop-filter: blur(7px) !important;
   background-color: rgba(255, 255, 224, 0.8) !important; 
-  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  max-width: 90%; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
 }
 
 #certifications {
   border-radius: 15px !important; 
   justify-self: center !important; 
-  padding: 2% !important; 
+  padding: 4% !important; 
   margin-top: 70px !important; 
   width: 90% !important; 
   backdrop-filter: blur(7px) !important;
   background-color: rgba(255, 255, 224, 0.8) !important; 
-  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  max-width: 90%; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
 }
 
 #tech {
   border-radius: 15px !important; 
   justify-self: center !important; 
-  padding: 2% !important; 
+  padding: 4% !important; 
   margin-top: 70px !important; 
   width: 90% !important; 
   backdrop-filter: blur(7px) !important;
   background-color: rgba(255, 255, 224, 0.8) !important; 
-  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  max-width: 90%; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
 }
 
 #project {
   border-radius: 15px !important; 
   justify-self: center !important; 
-  padding: 2% !important; 
+  padding: 4% !important; 
   margin-top: 70px !important; 
   width: 90% !important; 
   backdrop-filter: blur(7px) !important;
   background-color: rgba(255, 255, 224, 0.8) !important; 
-  max-width: 750px; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+  max-width: 90%; box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
 }
 
  #vanta-bg {
@@ -234,8 +234,16 @@ body {
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
   }
 
-  .night-mode #cert, .night-mode #certhd, .night-mode .menu-icon {
+  .night-mode #cert, .night-mode #certhd, .night-mode .menu-icon, .night-mode #ccmptitle {
     color: rgb(252, 252, 92) !important;
+  }
+
+  .night-mode .certissue {
+    color: lightgoldenrodyellow !important;
+  }
+
+  .night-mode #ccmpprov {
+    color: lightcyan !important;
   }
 
   .night-mode .certdate, .night-mode .certcover {
@@ -265,11 +273,29 @@ body {
     text-shadow: 1px 1px 1px rgba(0, 157, 255, 0.1) !important;
 }
 
+.p2 {
+color: yellow !important;
+}
+
 .hd1 {
     font-size: 35px !important;
     color: blueviolet !important;
     font-weight: bold !important;
     text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
+}
+
+.certdate {
+    color: darkolivegreen !important;
+    font-weight: bold !important;
+    text-decoration: wavy !important;
+    text-shadow: 2px 4px 6px rgba(255, 225, 28, 0.1) !important;
+}
+
+.certissue {
+    color: darkgoldenrod !important;
+    font-weight: bold !important;
+    text-decoration: wavy !important;
+    text-shadow: 2px 4px 6px rgba(255, 225, 28, 0.1) !important;
 }
 
 #cert {
@@ -286,15 +312,33 @@ body {
   text-shadow: 2px 4px 6px rgba(255, 225, 28, 0.1) !important;
 }
 
+#ccmptitle {
+  color: darkorange !important;
+  font-weight: bold !important;
+  text-decoration: wavy !important;
+  text-shadow: 2px 4px 6px rgba(255, 225, 28, 0.1) !important;
+}
+
+#ccmpprov {
+  color: cornflowerblue !important;
+  font-weight: bold !important;
+  text-decoration: wavy !important;
+  text-shadow: 2px 4px 6px rgba(255, 225, 28, 0.1) !important;
+}
+
 .certlist {
   font-size: 18px !important;
   text-shadow: 1px 1px 1px rgba(0, 157, 255, 0.1) !important;
 }
 
+.menu {
+  color: yellow !important;
+}
+
 .menu-icon {
   font-size: 24px !important;
   cursor: pointer !important;
-  color: darkblue !important
+  color: cyan !important
 }
 
 .dropdown {

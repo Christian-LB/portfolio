@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" 
+  rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Los Baños | Course Completions</title>
+</head>
+<body>
+  <div id="vanta-bg"></div>
+  <div id="topBanner" class="d-flex align-items-center">
+    <span class="menu-icon me-2" onclick="toggleDropdown()">☰</span>
+  
+    <div class="dropdown" id="dropdownMenu">
+      <a class="Btns" onclick="moveToHome()"><h4>Home</h4></a>
+      <a class="Btns" onclick="moveToInfo()"><h4>About Me</h4></a>
+      <a class="Btns" onclick="moveToTech()"><h4>Tech Stack</h4></a>
+      <a class="Btns" onclick="moveToCertifications()"><h4>Certifications</h4></a>
+      <a class="Btns" onclick="moveToProjects()"><h4>Projects</h4></a>
+    </div>
+      
+    <h3 class="menu ms-1 me-auto">Menu</h3>
+    <div class="themeBG icons card rounded-circle d-flex align-items-center justify-content-center me-1">
+      <a class="Btns" onclick="toggleTheme()">
+        <img class="themeImg rounded-circle" src="images/ic_moon.gif" width="30px" height="30px">
+      </a>
+    </div>
+  </div>
+
+  <div id="certifications" class="fadeUpMain d-block">
+    <h2 class="fadeLeftMain hd1">Course Completions</h2>
+    
+    <div class="zoomInCert row g-0 w-100 d-flex align-items-start">
+      <div class="col-7 col-md-7 mt-3">
+        <h4 id="ccmptitle">Java Foundations</h4>
+        <h5 id="ccmpprov">From: Oracle Academy</h5>
+        <p class="p1 card-text m-0">I completed this course during my 2nd year of college at SDCA through Oracle Academy. This course greatly helped me develop a better understanding of the fundamentals of Java programming and apply them in practice.</p>
+      </div>
+
+      <div class="fadeRightCert col-5 col-md-5 mt-3 d-flex flex-column align-items-end" data-bs-toggle="tooltip" data-bs-placement="top" title="View my Java Foundations certificate">
+        <div class="d-flex flex-column align-items-center">
+          <h4 class="certissue align-self-center"><b>Date of Completion:</b></h4>
+          <h4 class="certdate align-self-center"><b>Dec. 29, 2024</b></h4>
+          <a href="certs\clmsCertificate.pdf" target="_blank" 
+            class="Btns d-block text-center">
+            <img class="certImg mt-3 img-fluid" src="images/ic_oracle.png" width="130px" height="130px">
+          </a>
+        </div>
+        <br>
+      </div>
+    </div>
+    
+    <div class="zoomInCert row g-0 w-100 d-flex align-items-start">
+      <div class="col-7 col-md-7 mt-3">
+        <h4 id="ccmptitle">Introduction to IoT and Digital Transformation</h4>
+        <h5 id="ccmpprov">From: Cisco Networking Academy</h5>
+        <p class="p1 card-text m-0">I finished this course during my 3rd year of college here at SDCA through Cisco Networking Academy. This course helped me understand the basics of the Internet of Things.</p>
+      </div>
+
+      <div class="fadeRightCert col-5 col-md-5 mt-3 d-flex flex-column align-items-end" data-bs-toggle="tooltip" data-bs-placement="top" title="View my Introduction to IoT and Digital Transformation certificate">
+        <div class="d-flex flex-column align-items-center">
+          <h4 class="certissue align-self-center"><b>Date of Completion:</b></h4>
+          <h4 class="certdate align-self-center"><b>Feb. 11, 2026</b></h4>
+          <a href="certs\Introduction_to_IoT_certificate_christian-losbanos-sdca-edu-ph_765fc1f3-e356-416a-b86d-8f51b0dbdfc7.pdf" target="_blank" 
+            class="Btns d-block text-center">
+            <img class="certImg mt-3 img-fluid" src="images/ic_intro2iot.png" width="130px" height="130px">
+          </a>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <div class="zoomInCert row g-0 w-100 d-flex align-items-start">
+      <div class="col-7 col-md-7 mt-3">
+        <h4 id="ccmptitle">Introduction to Cybersecurity</h4>
+        <h5 id="ccmpprov">From: Cisco Networking Academy</h5>
+        <p class="p1 card-text m-0">I completed approximately 90% of this course during my 3rd year of college at SDCA through Cisco Networking Academy. I completed the remaining 10% during my 4th year after successfully passing the final examination. This course helped me gain a deeper understanding of the fundamentals of cybersecurity and its importance in protecting digital systems and information.
+        </p>
+      </div>
+
+      <div class="fadeRightCert col-5 col-md-5 mt-3 d-flex flex-column align-items-end" data-bs-toggle="tooltip" data-bs-placement="top" title="View my Introduction to Cybersecurity certificate">
+        <div class="d-flex flex-column align-items-center">
+          <h4 class="certissue align-self-center"><b>Date of Completion:</b></h4>
+          <h4 class="certdate align-self-center"><b>Oct. 16, 2026</b></h4>
+          <a href="certs\Introduction_to_Cybersecurity_certificate_christian-losbanos-sdca-edu-ph_60d03d9d-1563-45f8-8967-7f826a0908a2.pdf" target="_blank" 
+            class="Btns d-block text-center">
+            <img class="certImg mt-3 img-fluid" src="images/ic_intro2cybersec.png" width="130px" height="130px">
+          </a>
+        </div>
+        <br>
+      </div>
+    </div>
+
+    <div class="zoomInCert row g-0 w-100 d-flex align-items-start">
+      <div class="col-7 col-md-7 mt-3">
+        <h4 id="ccmptitle">Ethical Hacker</h4>
+        <h5 id="ccmpprov">From: Cisco Networking Academy</h5>
+        <p class="p1 card-text m-0">I completed approximately 90% of this course during my 3rd year of college at SDCA through Cisco Networking Academy. I completed the remaining 10% during my 4th year after successfully passing the final examination. This course helped me gain a deeper understanding of the world of hacking, including its techniques, methodologies, and role in cybersecurity.
+      </div>
+
+      <div class="fadeRightCert col-5 col-md-5 mt-3 d-flex flex-column align-items-end" data-bs-toggle="tooltip" data-bs-placement="top" title="View my Ethical Hacker certificate">
+        <div class="d-flex flex-column align-items-center">
+          <h4 class="certissue align-self-center"><b>Date of Completion:</b></h4>
+          <h4 class="certdate align-self-center"><b>Oct. 16, 2026</b></h4>
+          <a href="certs\Ethical_Hacker_certificate_christian-losbanos-sdca-edu-ph_2d4d4ab9-1da7-401e-808c-0a5bc57f4d50.pdf" target="_blank" 
+            class="Btns d-block text-center">
+            <img class="certImg mt-3 img-fluid" src="images/ic_ehacker.png" width="130px" height="130px">
+          </a>
+        </div>
+        <br>
+      </div>
+    </div>
+
+  </div>
+  <div class="btmSpace"></div>
+  <div id="bottomBanner" class="d-flex">
+    <h4 class="p2 m-0">Coded with love by Christian</h4>
+    <img src="images/ic_heart.gif" width="20px" height="20px" class="ms-2">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

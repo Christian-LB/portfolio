@@ -55,6 +55,10 @@ function moveToCertifications() {
   window.location.href = 'cert.html';
 }
 
+function moveToCrsCompletions() {
+  window.location.href = 'crscompletion.html';
+}
+
 function moveToProjects() {
   window.location.href = 'project.html';
 }
@@ -83,3 +87,4 @@ document.addEventListener('DOMContentLoaded', () => {
   updateTheme();
   initVanta();
 });
+
