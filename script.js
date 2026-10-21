@@ -63,6 +63,10 @@ function moveToProjects() {
   window.location.href = 'project.html';
 }
 
+function moveToOthrAchv() {
+  window.location.href = 'otherachievements.html'
+}
+
 function updateTheme() {
   let bottomImage = document.querySelector("#btmImg");
   let themeImage = document.querySelector(".themeImg");

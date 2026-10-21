@@ -14,6 +14,10 @@ body {
   z-index: 1000 !important;
 }
 
+.projImg {
+  padding: 10% !important;
+}
+
 .certImg {
   max-width: 80% !important; 
   height: auto !important;
@@ -278,7 +282,7 @@ color: yellow !important;
 }
 
 .hd1 {
-    font-size: 35px !important;
+    font-size: 35px;
     color: blueviolet !important;
     font-weight: bold !important;
     text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
@@ -589,6 +593,27 @@ color: yellow !important;
   animation: fadeRight 0.55s ease-out forwards;
   animation-delay: 0.6s;
 }
+
+@media (max-width: 400px) {
+  .hd1 {
+      font-size: 30px !important;
+    }
+}
+
+@media (min-width: 900px) { 
+    #ccmptitle, #certhd {
+      font-size: 40px !important;
+    }
+    .certImg {
+      width: 250px !important;
+    }  
+    .p1, #ccmpprov, .certissue, .certdate, .certcover, .certlist {
+      font-size: 30px !important;
+    }
+    .hd1 {
+      font-size: 55px !important;
+    }
+  }
 
 @media (max-width: 575.98px) {
   .imgMe-col {
