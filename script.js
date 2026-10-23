@@ -67,6 +67,10 @@ function moveToOthrAchv() {
   window.location.href = 'otherachievements.html'
 }
 
+function moveToCompetitions() {
+  window.location.href = 'competitions.html'
+}
+
 function updateTheme() {
   let bottomImage = document.querySelector("#btmImg");
   let themeImage = document.querySelector(".themeImg");

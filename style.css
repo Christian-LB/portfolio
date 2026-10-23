@@ -238,8 +238,12 @@ body {
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3) !important;
   }
 
-  .night-mode #cert, .night-mode #certhd, .night-mode .menu-icon, .night-mode #ccmptitle {
+   .night-mode #certhd, .night-mode .menu-icon, .night-mode #ccmptitle {
     color: rgb(252, 252, 92) !important;
+  }
+
+  .night-mode #cert {
+    color: rgb(255, 181, 181) !important;
   }
 
   .night-mode .certissue {
@@ -303,7 +307,7 @@ color: yellow !important;
 }
 
 #cert {
-    color: darkorange !important;
+    color: red !important;
     font-weight: bold !important;
     text-decoration: wavy !important;
     text-shadow: 2px 4px 6px rgba(255, 225, 28, 0.1) !important;
