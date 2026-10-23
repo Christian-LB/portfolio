@@ -54,11 +54,6 @@ body {
   background-color: rgb(228, 250, 255) !important;
 }
 
-#imgMe {
-  max-width: 80% !important; 
-  height: auto !important;
-}
-
 .themeBG {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important; 
   width: 30px !important; 
@@ -192,11 +187,11 @@ body {
     background-color: black  !important;
   }
 
-  .night-mode .hd1, .night-mode .menu {
+  .night-mode .hd1, .night-mode .hd1_n, .night-mode .menu {
     color: white  !important;
   }
 
-  .night-mode .p1, .night-mode .certlist {
+  .night-mode .p1, .night-mode .p1_i, .night-mode .certlist {
     color: rgb(190,190,190)  !important;
   }
 
@@ -276,6 +271,11 @@ body {
     font-family: Annie Use Your Telescope, cursive !important;
 }
 
+.p1_i {
+    font-size: 20px !important;
+    text-shadow: 1px 1px 1px rgba(0, 157, 255, 0.1) !important;
+}
+
 .p1 {
     font-size: 20px !important;
     text-shadow: 1px 1px 1px rgba(0, 157, 255, 0.1) !important;
@@ -287,6 +287,13 @@ color: yellow !important;
 
 .hd1 {
     font-size: 35px;
+    color: blueviolet !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
+}
+
+.hd1_n {
+  font-size: 35px;
     color: blueviolet !important;
     font-weight: bold !important;
     text-shadow: 2px 2px 4px rgba(183, 0, 200, 0.5) !important;
@@ -598,8 +605,17 @@ color: yellow !important;
   animation-delay: 0.6s;
 }
 
+@media (max-width: 575px) {
+  .hd1_n, .p1_i {
+    text-align: center !important;
+  }
+  .con1 {
+    justify-content: center !important;
+  }
+}
+
 @media (max-width: 400px) {
-  .hd1 {
+  .hd1, .hd1_n {
       font-size: 30px !important;
     }
 }
@@ -611,21 +627,21 @@ color: yellow !important;
     .certImg {
       width: 250px !important;
     }  
-    .p1, #ccmpprov, .certissue, .certdate, .certcover, .certlist {
+    .p1, .p1_i, #ccmpprov, .certissue, .certdate, .certcover, .certlist {
       font-size: 30px !important;
     }
-    .hd1 {
+    .hd1, .hd1_n {
       font-size: 55px !important;
     }
   }
 
-@media (max-width: 575.98px) {
+@media (min-width: 576px) {
   .imgMe-col {
     position: absolute;
     right: 0;
     top: 57%;
-    transform: translateY(-50%);
-    width: 150px;
+    transform: translateY(-56%);
+    width: 200px;
     justify-content: flex-end !important;
     z-index: 2;
     background: transparent;
